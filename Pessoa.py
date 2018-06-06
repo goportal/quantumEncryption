@@ -57,14 +57,6 @@ class Pessoa():
             for I in range(nQubits):
                 self.bases.append("D")
 
-    def geraTabelaBases(self,qubits):
-        tab1 = []
-        tab2 = []
-        for I in range(len(qubits)):
-            tab1.append(self.lerQubit(qubits[I],"R"))
-            tab2.append(self.lerQubit(qubits[I],"D"))
-        return [tab1,tab2]
-
     def geraBitsAleatorios(self,nBits):
         self.bits = range(nBits)
         for I in self.bits:
